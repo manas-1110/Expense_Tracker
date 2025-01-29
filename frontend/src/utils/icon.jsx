@@ -1,0 +1,10 @@
+export const dashboard = <i className="fa-solid fa-image"></i>;
+export const transactions = <i className="fa-solid fa-image"></i>;
+export const trend = <i className="fa-solid fa-image"></i>;
+export const expenses = <i className="fa-solid fa-image"></i>;
+export const dollar = <i className="fa-solid fa-image"></i>;
+export const calender = <i className="fa-solid fa-image"></i>;
+export const comment = <i className="fa-solid fa-image"></i>;
+export const plus = <i className="fa-solid fa-image"></i>;
+export const trash = <i className="fa-solid fa-image"></i>;
+export const signout = <i className="fa-solid fa-image"></i>;

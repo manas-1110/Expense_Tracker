@@ -5,14 +5,13 @@ const app = express();
 const { readdirSync } = require("fs");
 
 require("dotenv").config();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(cors());
 
-readdirSync("./routes").map((route) =>
-    app.use("/api/v1", require("./routes/" + route))
-);
+app.use("/api/v1/auth", require("./routes/auth"));
+app.use("/api/v1", require("./routes/transactions"));
 
 const server = () => {
     db();
